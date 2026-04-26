@@ -1,0 +1,1 @@
+﻿global using Smart_ERP_System.ViewModel;

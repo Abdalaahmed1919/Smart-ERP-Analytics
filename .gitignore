@@ -1,0 +1,36 @@
+﻿# Build
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ASP.NET Core
+wwwroot/lib/
+wwwroot/node_modules/
+
+# Node
+node_modules/
+
+# Secrets
+appsettings.Development.json
+appsettings.Local.json
+
+
+# Publish
+publish/

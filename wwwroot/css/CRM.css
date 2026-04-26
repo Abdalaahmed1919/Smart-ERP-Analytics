@@ -1,0 +1,57 @@
+
+  .crm-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+  }
+  .crm-name-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cust-avatar {
+    width: 30px; height: 30px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: .68rem; font-weight: 700; color: #fff; flex-shrink: 0;
+  }
+
+  
+  .crm-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .crm-action-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .crm-action-icon {
+    width: 40px; height: 40px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; flex-shrink: 0;
+  }
+  .crm-action-title { font-weight: 600; font-size: .9rem; margin-bottom: 3px; color: var(--text); }
+  .crm-action-desc  { font-size: .78rem; color: var(--muted); }
+
+  @media (max-width: 768px) {
+    .crm-actions-grid { grid-template-columns: 1fr; gap: 10px; }
+    .crm-action-card  { padding: 16px 18px; }
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .crm-actions-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  
+  @media (max-width: 991px) {
+    .col-hide-lg { display: none !important; }
+  }
+  @media (max-width: 767px) {
+    .col-hide-md { display: none !important; }
+  }

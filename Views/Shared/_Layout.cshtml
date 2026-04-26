@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Smart ERP – Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/shared.css" />
+</head>
+<body>
+
+    <!-- MOBILE TOPBAR -->
+    <div class="mobile-topbar">
+        <a class="mobile-brand" href="index.html"><i class="fa-solid fa-grid-2"></i> Smart ERP</a>
+        <div class="mobile-topbar-right">
+            <button class="icon-btn" style="position:relative;"><i class="fa-regular fa-bell"></i><span class="badge-dot"></span></button>
+            <button class="hamburger-btn" id="mobileMenuBtn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </div>
+    <!-- MOBILE OVERLAY -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <!-- MOBILE DROPDOWN NAV -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-inner">
+            <a class="nav-item active" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a class="nav-item" href="purchase.html"><i class="fa-solid fa-cart-shopping"></i> Purchase</a>
+            <a class="nav-item" href="sales.html"><i class="fa-solid fa-chart-line"></i> Sales</a>
+            <a class="nav-item" href="hr.html"><i class="fa-solid fa-users"></i> HR</a>
+            <a class="nav-item" href="inventory.html"><i class="fa-solid fa-boxes-stacked"></i> Inventory</a>
+            <a class="nav-item" href="finance.html"><i class="fa-solid fa-dollar-sign"></i> Finance</a>
+            <a class="nav-item" href="crm.html"><i class="fa-solid fa-address-book"></i> CRM</a>
+            <a class="nav-item" href="risk.html"><i class="fa-solid fa-triangle-exclamation"></i> Risk Mgmt</a>
+            <a class="nav-item" href="ml.html"><i class="fa-solid fa-brain"></i> ML Insights</a>
+        </div>
+    </div>
+
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <a class="sidebar-brand" href="index.html"><i class="fa-solid fa-grid-2"></i> Smart ERP</a>
+        <nav class="nav-section">
+            <a class="nav-item active" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a class="nav-item" href="purchase.html"><i class="fa-solid fa-cart-shopping"></i> Purchase</a>
+            <a class="nav-item" href="sales.html"><i class="fa-solid fa-chart-line"></i> Sales</a>
+            <a class="nav-item" href="hr.html"><i class="fa-solid fa-users"></i> HR</a>
+            <a class="nav-item" href="inventory.html"><i class="fa-solid fa-boxes-stacked"></i> Inventory</a>
+            <a class="nav-item" href="finance.html"><i class="fa-solid fa-dollar-sign"></i> Finance</a>
+            <a class="nav-item" href="crm.html"><i class="fa-solid fa-address-book"></i> CRM</a>
+            <a class="nav-item" href="risk.html"><i class="fa-solid fa-triangle-exclamation"></i> Risk Mgmt</a>
+            <a class="nav-item" href="ml.html"><i class="fa-solid fa-brain"></i> ML Insights</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <div class="main-wrap">
+        <header class="topbar">
+            <div class="search-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search…" />
+            </div>
+            <div class="topbar-right">
+                <button class="icon-btn"><i class="fa-regular fa-bell"></i><span class="badge-dot"></span></button>
+                <button class="icon-btn"><i class="fa-solid fa-gear"></i></button>
+                <div class="user-pill">
+                    <div class="avatar">AU</div>
+                    <div class="user-info">
+                        <div class="uname">Admin User</div>
+                        <div class="urole">Admin</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/shared.js"></script>
+
+</body>
+</html>

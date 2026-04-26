@@ -1,0 +1,140 @@
+
+  .predictions-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 20px;
+  }
+  .predictions-card .section-title {
+    font-size: .95rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text);
+  }
+  .pred-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .pred-item {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .pred-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .pred-item-title { font-weight: 600; font-size: .9rem; color: var(--text); }
+  .pred-item-meta { text-align: right; }
+  .pred-item-change { font-size: .8rem; font-weight: 700; display: block; }
+  .pred-item-change.pos { color: #16a34a; }
+  .pred-item-change.neg { color: var(--red); }
+  .pred-item-confidence { font-size: .72rem; color: var(--muted); display: block; margin-top: 2px; }
+  .pred-item-row { display: flex; align-items: center; gap: 6px; font-size: .85rem; margin-bottom: 5px; }
+  .pred-item-row:last-child { margin-bottom: 0; }
+  .pred-item-row .lbl { color: var(--muted); }
+  .pred-item-row .curr { font-weight: 700; color: var(--text); }
+  .pred-item-row .pred { font-weight: 700; color: var(--blue); font-size: .9rem; }
+
+  
+  .ml-model-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 22px;
+    height: 100%;
+  }
+  .ml-model-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .ml-model-icon {
+    width: 38px; height: 38px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: .95rem; flex-shrink: 0;
+  }
+  .ml-model-title { font-weight: 600; font-size: .9rem; color: var(--text); margin: 0; }
+  .ml-model-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .83rem;
+    margin-bottom: 8px;
+  }
+  .ml-model-row:last-child { margin-bottom: 0; }
+  .ml-model-row .lbl { color: var(--muted); }
+  .ml-model-row .val { font-weight: 600; color: var(--text); }
+  .ml-model-row .val.green { color: #16a34a; }
+
+  
+  .anomalies-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .anomalies-card-header {
+    padding: 16px 22px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+    font-size: .95rem;
+  }
+  .anomaly-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 22px;
+    border-bottom: 1px solid var(--border);
+  }
+  .anomaly-row:last-child { border-bottom: none; }
+  .anomaly-row-left { display: flex; align-items: flex-start; gap: 12px; flex: 1; min-width: 0; }
+  .anomaly-row-left i { font-size: .95rem; margin-top: 2px; flex-shrink: 0; }
+  .anomaly-row-title { font-weight: 600; font-size: .875rem; margin-bottom: 3px; color: var(--text); }
+  .anomaly-row-desc { font-size: .8rem; color: var(--muted); margin-bottom: 3px; }
+  .anomaly-row-time { font-size: .72rem; color: #9ca3af; }
+  .anomaly-row-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .anomaly-investigate {
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .anomaly-investigate:hover { text-decoration: underline; }
+
+  
+  .ml-updated-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid #bbf7d0;
+    background: #f0fdf4;
+    border-radius: 20px;
+    padding: 7px 16px;
+    font-size: .82rem;
+    color: #16a34a;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .ml-updated-badge i { font-size: .85rem; }
+
+  
+  @media (max-width: 576px) {
+    .pred-grid { grid-template-columns: 1fr; }
+  }
